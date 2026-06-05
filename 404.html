@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poojashree Choudhury | 404 Not Found</title>
+    <!-- Tailwind CSS (CDN for Static Single Page Usage) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="min-h-screen bg-zinc-950 text-zinc-100 font-sans flex flex-col items-center justify-center p-6 relative overflow-hidden">
+    <!-- Atmospheric radial background gradients -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-zinc-500/5 rounded-full blur-[150px]" />
+    </div>
+
+    <!-- Error Card Container -->
+    <div class="glass-card max-w-md w-full p-8 md:p-12 text-center relative border border-white/10 shadow-2xl animate-fade-in-up">
+      <div class="flex justify-center mb-6">
+        <div class="p-4 bg-white/5 rounded-full border border-white/10">
+          <i data-lucide="help-circle" class="text-zinc-400" style="width: 48px; height: 48px;"></i>
+        </div>
+      </div>
+      
+      <h1 class="text-7xl font-mono font-bold tracking-tighter text-white mb-2">404</h1>
+      <h2 class="text-xl font-bold tracking-tight text-zinc-200 mb-4 font-sans">Lost in Latent Space</h2>
+      
+      <p class="text-zinc-400 text-sm font-light leading-relaxed mb-8">
+        The page you are looking for does not exist or has been relocated to another parameter space.
+      </p>
+
+      <a 
+        href="./index.html" 
+        class="inline-flex items-center gap-2 justify-center px-6 py-3 bg-white text-zinc-950 text-sm font-semibold rounded-full hover:bg-zinc-200 transition-all font-sans"
+      >
+        <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i>
+        Back to Portfolio
+      </a>
+    </div>
+
+    <footer class="absolute bottom-8 text-center">
+      <p class="text-[10px] uppercase tracking-[0.2em] font-semibold text-zinc-600">© 2026 Poojashree Choudhury • Static Portfolio</p>
+    </footer>
+
+    <!-- Vector Lucide Icons Setup -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
